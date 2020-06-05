@@ -1,0 +1,50 @@
+section#categories
+    margin-top: 25px
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    z-index: 1
+    position: relative
+    overflow: hidden
+    @media screen and ( max-width: $breakpoint )
+        display: block
+    .col
+        width: 50%
+        position: relative
+        z-index: 1
+        @media screen and ( max-width: $breakpoint )
+            width: 100%
+            &:last-child
+                margin-top: -200px
+        &:last-child
+            z-index: 0
+            a
+                &:hover
+                    transform: scale(1.02) rotate(-0.5deg)
+                img
+                    width: 135%
+                    left: 44% !important
+        a
+            margin: 0 auto
+            position: relative
+            display: block
+            opacity: .7
+            transition: all .3s ease-in-out
+            &:hover
+                opacity: 1
+                transform: scale(1.02) rotate(0.5deg)
+            &:last-child
+                img
+                    left: 48%
+            h2
+                position: absolute
+                transform: translate(-50%)
+                top: 50%
+                left: 50%
+                z-index: -1
+            img
+                position: relative
+                transform: translate(-50%)
+                left: 50%
+                width: 115%
+
